@@ -1,0 +1,106 @@
+.pokemon{
+    display: flex;
+    justify-content: center;
+    align-items: centter;
+    padding: 40px;
+    
+}
+.pokemonId{
+    position: relative;
+    width: min(800px, 100%);
+    text-align: center;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+}
+.pokemonId_header{
+    top: 0;
+    height: 160px;
+    width: 100%;
+    background-color: blue;
+    margin: 5px;
+    width: calc(100% - 10px);
+}
+.pokemonId_img{
+    position: absolute;
+    top: -30px;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pokemonId_id{
+    font-size: 25px;
+    margin: 15px 0 5px 0;
+}
+.pokemonId_name{
+    margin: 0;
+    text-transform: capitalize;
+}
+.pokemonId_features{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.pokemonId_feature{
+font-size: 12px;
+}
+.pokemonId_feature_name{
+    margin: 10px 0 0 0;
+}
+.pokemonId_feature_value{
+    margin: 4px 0 0 0;
+    font-weight: bold;
+}
+.pokemonId_info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.pokemonId_info_container{
+    width: max(45%, 300px);
+}
+.pokemonId_info_container:first-child {
+    color: white;
+}
+.pokemonId_info_title{
+    margin-bottom: 0;
+    color: #030706;
+}
+.pokemonId_info_data{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.pokemonId_info_value{
+    border: 1px solid #D3D3D3;
+    width: 100%;
+    padding: 4px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.pokemonId_stats{
+    padding: 0 25px 30px 25px;
+}
+.pokemonId_stats_title{
+    text-align: left;
+}
+.pokemonId_stat_header{
+    display: flex;
+    justify-content: space-between;
+}
+.pokemonId_stat_name{
+    text-transform: capitalize;
+}
+.pokemonId_stat_bar{
+    height: 20px;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.pokemonId_stat_barProgress{
+    background: linear-gradient(90deg, #FCD676, #E6901E);
+    height: 20px;
+    width: 60%;
+}
+

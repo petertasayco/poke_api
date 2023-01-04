@@ -5,6 +5,7 @@ import CardPoke from '../components/Pokedex/CardPoke'
 import InputSearch from '../components/Pokedex/InputSearch'
 import Pagination from '../components/Pokedex/Pagination'
 import SelectByType from '../components/Pokedex/SelectByType'
+import "./styles/pokedex.css"
 
 const Pokedex = () => {
 
@@ -34,15 +35,14 @@ const Pokedex = () => {
 
 const username =  useSelector(state => state.username)
 
-const [page, setPage] = useState(40)
+const [page, setPage] = useState(1)
 const [pokePerPage, setPokePerPage] = useState(8)
 const initialPoke = (page - 1) * pokePerPage
 const finalPoke = page * pokePerPage
 
   return (
-    <div>
-      <header>
-        <h1>POKEDEX</h1>
+    <div className='pokedex_all'>
+      <header className='message'>
         <p>Welcome <span>{username}</span>, here you can find your favorite pokemon</p>
       </header>
       <aside>
